@@ -1,0 +1,7 @@
+; StuffIt.def : Declares the module parameters for the DLL.
+
+LIBRARY      "KickIt"
+
+EXPORTS
+    ; Explicit exports can go here
+	GetPluginAPI @1

@@ -1,0 +1,7 @@
+; LagTest.def : Deklariert die Modul-Parameter für die DLL.
+
+LIBRARY      "LagTest"
+
+EXPORTS
+    ; Explizite Exporte können hier eingefügt werden
+	GetPluginAPI @1

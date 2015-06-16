@@ -1,0 +1,740 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BendMX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "For new versions check http://mxcontrol.sourceforge.net\0"
+            VALUE "CompanyName", "mxcontrol.sourceforge.net\0"
+            VALUE "FileDescription", "BendMX - Chatextension for WinMX 3.5x\0"
+            VALUE "FileVersion", "3,9,9,1\0"
+            VALUE "InternalName", "BendMX\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003-2005 by Thees Schwab\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BendMX.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "BendMX 3.9.9 Alpha 1\0"
+            VALUE "ProductVersion", "3,9,9,1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BENDMX DIALOG DISCARDABLE  0, 0, 434, 292
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BendMX 3 by [:] and {:}"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,273,50,12
+    PUSHBUTTON      "Apply",IDC_APPLY,246,273,50,12
+    CONTROL         "List1",IDC_PREFBAR,"SysListView32",LVS_SINGLESEL | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,43,278
+    LTEXT           "",IDC_STATIC_CONFIG_RECT,55,7,372,262
+END
+
+IDD_GENERAL DIALOG DISCARDABLE  0, 0, 362, 240
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Language Setup",IDC_STATIC_LANG,3,1,355,30
+    COMBOBOX        IDC_LANG,10,12,342,141,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Plugins",IDC_STATIC_PLUGINS,3,108,355,124
+    CONTROL         "List1",IDC_PLUGINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,116,342,93
+    PUSHBUTTON      "Uninstall",IDC_REMOVE,192,213,50,14
+    PUSHBUTTON      "Reload All",IDC_RELOAD_ALL,247,213,50,14
+    PUSHBUTTON      "Unload All",IDC_UNLOAD_ALL,303,213,49,14
+    GROUPBOX        "Options",IDC_STATIC_OPTIONS,3,40,179,62
+    CONTROL         "Enable History",IDC_ENABLE_HISTORY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,79,91,10
+    EDITTEXT        IDC_HISTORDEPTH,104,78,40,12,ES_AUTOHSCROLL
+    LTEXT           "msgs.",IDC_STATIC_DEPTH,149,80,27,8
+    GROUPBOX        "Misc",IDC_STATIC_MISC,187,40,171,62
+    PUSHBUTTON      "Repair Hooks",IDC_REPAIR,193,60,94,14
+    PUSHBUTTON      "Help",IDC_FONTHELP,295,60,57,14
+    CONTROL         "Enable Soundeffects",IDC_SOUNDEFFECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,62,91,10
+    LTEXT           "Window Timer Resolution",IDC_STATIC_TIMERESOLUTION,193,
+                    80,94,8
+    EDITTEXT        IDC_RESOLUTION,295,78,39,12,ES_AUTOHSCROLL
+    LTEXT           "ms.",IDC_STATIC_MS,340,80,12,8
+    CONTROL         "Sloppy Shutdown",IDC_MORONMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,62,74,10
+END
+
+IDD_FILTER DIALOG DISCARDABLE  0, 0, 354, 218
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Incoming screens",IDC_STATIC_INCOMING,2,3,170,103
+    CONTROL         "Block URL",IDC_BLOCK_HTTP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,14,155,10
+    CONTROL         "Block ASCII ART (RCMS)",IDC_BLOCK_ASCII_ART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,38,155,10
+    CONTROL         "Block Private Messages (RCMS)",IDC_BLOCK_PRIVATE_RCMS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,25,155,10
+    CONTROL         "Block /topic",IDC_BLOCK_TOPIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,88,155,10
+    CONTROL         "Block /motd",IDC_BLOCK_MOTD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,61,155,10
+    CONTROL         "Block empty messages",IDC_BLOCK_MSG,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,11,75,155,10
+    CONTROL         "Block Admin messages (RCMS)",IDC_BLOCK_ADMIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,49,155,10
+    GROUPBOX        "Trusted Nicknames",IDC_STATIC_TRUSTED,2,110,170,104
+    EDITTEXT        IDC_TRUSTED_ADD,11,121,121,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_TRUSTED_ADD_BTN,135,121,31,12
+    LISTBOX         IDC_TRUSTED_LIST,11,134,121,74,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Rem.",IDC_TRUSTED_REM_BTN,135,135,31,12
+    GROUPBOX        "Word filter",IDC_STATIC_WORDFILTER,183,3,164,211
+    CONTROL         "Replace offensive words with ****",IDC_STARS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,187,14,153,10
+    CONTROL         "Block messages with offensive words",IDC_FILTERXTREM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,25,153,10
+    EDITTEXT        IDC_FILTER_ADD,187,37,121,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_FILTER_ADD_BTN,309,37,31,12
+    LISTBOX         IDC_FILTER_LIST,187,60,121,148,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Rem.",IDC_FILTER_REM_BTN,309,59,31,12
+END
+
+IDD_MESSAGES DIALOG DISCARDABLE  0, 0, 363, 236
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Quick Messages",IDC_STATIC_QUICK,2,1,354,130
+    EDITTEXT        IDC_MSG_ADD,8,12,288,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_MSG_ADD_BTN,301,12,50,12
+    LISTBOX         IDC_QUICKCMDS,8,28,288,95,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_QUICKREM,301,28,50,12
+    PUSHBUTTON      "Up",IDC_QUICKUP,301,43,50,12
+    PUSHBUTTON      "Down",IDC_QUICKDOWN,301,58,50,13
+    GROUPBOX        "MP3 / Video Announcement (F8) [Requires Winamp 2.x or 5.x]",
+                    IDC_STATIC_WINAMP,2,146,354,86
+    LTEXT           "MP3 / Audio:",IDC_STATIC_MUSIC,8,162,46,8
+    EDITTEXT        IDC_NOWLISTENING,54,161,297,12,ES_AUTOHSCROLL
+    LTEXT           "Video:",IDC_STATIC_VIDEO,8,181,40,8
+    EDITTEXT        IDC_NOW_WATCHING,54,179,297,12,ES_AUTOHSCROLL
+    LTEXT           "%WA-SONG% %WA-ARTIST% %WA-REMTIME% %WA-ELATIME% %WA-TOTALTIME%\n%WA-BITRATE% %WA-SAMPLERATE% %WA-CHANNELS% %WA-VERSION%",
+                    IDC_STATIC_VARS,8,205,343,21
+    LTEXT           "Variables",IDC_STATIC_VARS2,8,194,343,8
+END
+
+IDD_CHATDLG DIALOG DISCARDABLE  0, 0, 364, 186
+STYLE DS_SETFOREGROUND | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_USERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | WS_BORDER | WS_TABSTOP,
+                    6,6,352,154
+    CONTROL         "Always on top",IDC_TOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,166,60,10
+    PUSHBUTTON      "Hide",IDC_HIDE,308,164,50,14
+    CONTROL         "Slider1",IDC_TRANSPARENCY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,126,165,117,15
+    LTEXT           "Transparancy:",IDC_STATIC_TRANS,73,167,58,8
+    RTEXT           "(100%)",IDC_STATIC_100,247,167,20,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 331, 245
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         4009,IDC_STATIC,"Static",SS_BITMAP,32,1,268,89,
+                    WS_EX_STATICEDGE
+    CTEXT           "BendMX  ©2003 -2005",IDC_STATIC_BENDMX,120,94,92,8
+    LTEXT           "Email: Bender979@yahoo.de --- Home: http://mxcontrol.sourceforge.net",
+                    IDC_STATIC,52,158,228,8
+    PUSHBUTTON      "Read License",IDC_LPGPL,222,211,50,14
+    CTEXT           "Graphic Arts and Sounds by\nSabine Schwab aka {:}",
+                    IDC_STATIC,202,104,91,18
+    CTEXT           "BendMX is only cool\nYou don't use it you're a fool\nLot's of features\nFor all you creatures\nThis 's your favorite tool.",
+                    IDC_STATIC,31,183,106,42
+    CTEXT           "Programming and Design by Thees Schwab aka [:]",
+                    IDC_STATIC,31,105,106,17
+    LTEXT           "Thanks go to :",IDC_STATIC,147,124,47,8
+    LTEXT           "[Nushi]@[2SEN] for the WPN Encryption code",IDC_STATIC,
+                    92,133,148,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,151,317,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,173,317,1
+    CTEXT           "BendMX is distributed under the terms of the GNU Lesser General Public License.",
+                    IDC_STATIC,201,183,92,26
+END
+
+IDD_UTIL DIALOG DISCARDABLE  0, 0, 288, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Request"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter Text:",IDC_STATIC_ENTERTEXT,7,17,274,8
+    EDITTEXT        IDC_TEXT,7,35,274,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,83,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,66,50,14
+END
+
+IDD_SIMPLEBOT DIALOGEX 0, 0, 335, 249
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Integrated Simple Bot",IDC_STATIC_BOT,7,39,321,207
+    CTEXT           "If you want a bot with more features get  Metis from http://mxcontrol.sourceforge.net",
+                    IDC_STATIC,7,19,321,8
+    CTEXT           "IMPORTANT: Please do not use this bot in a channel, unless you have clearance from the Host.",
+                    IDC_STATIC_WARNINGBOT,7,7,321,11,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Room to run in:",IDC_STATIC_ROOMNAME,17,66,77,8
+    EDITTEXT        IDC_BOTROOM,102,63,216,14,ES_AUTOHSCROLL
+    LTEXT           "Announcer:",IDC_STATIC_INTERVAL,17,81,77,8
+    EDITTEXT        IDC_ANNOUNCE,102,78,216,14,ES_AUTOHSCROLL
+    LTEXT           "Announce every:",IDC_STATIC_EVERY,17,95,77,8
+    EDITTEXT        IDC_INTERVAL,102,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "Minutes (values smaller 5 = disable)",IDC_STATIC,146,95,
+                    112,8
+    CONTROL         "Limit access to Users with Operator Prefix (see Usergroups Tab)",
+                    IDC_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,107,
+                    301,10
+    LTEXT           "Trigger:",IDC_STATIC_TRIGGER,17,143,77,8
+    LTEXT           "Response:",IDC_STATIC_RESPONSE,102,143,216,8
+    EDITTEXT        IDC_TRIGGER,17,153,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RESPONSE,102,153,162,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADDTRIGGER,268,153,50,14
+    CONTROL         "List1",IDC_COMMANDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,17,170,247,72
+    PUSHBUTTON      "Delete",IDC_REMOVECMD,268,170,24,14
+    CONTROL         "Leech Kick",IDC_LEECHKICK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,118,77,10
+    CONTROL         "Enable Bot",IDC_ENABLEBOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,51,301,10
+    LTEXT           "Vars:\n%NAME%\n%TIME%\nand the usual Winamp variables :-)",
+                    IDC_STATIC,269,188,49,54
+    EDITTEXT        IDC_WELCOME,102,128,216,14,ES_AUTOHSCROLL
+    LTEXT           "Welcome Message",IDC_STATIC_WELCOME,17,131,77,8
+    LTEXT           "[Leave welcome message empty if you dont want to use it)",
+                    IDC_STATIC_LEAVEEMPTY,102,119,216,8
+    CTEXT           "Dont forget to set your nickname in the 'General' Tab to avoid Loops!",
+                    IDC_STATIC_SETNICKNAME,17,28,301,8
+    PUSHBUTTON      "Edit",IDC_EDITCMD,294,170,24,14
+END
+
+IDD_COLORS DIALOG DISCARDABLE  0, 0, 355, 234
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Prefixes / Names and Usergroups",-1,2,2,351,225
+    LTEXT           "Ops:",IDC_STATIC_OPS_PRE,9,14,44,8
+    EDITTEXT        IDC_PRE_REG_ADD,9,26,299,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_REG_PREFIX,9,46,299,59,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_OP_ADD,315,25,24,14
+    PUSHBUTTON      "Rem.",IDC_OP_REM,315,46,25,14
+    LTEXT           "Host:",IDC_STATIC_HOST_PREF,9,109,44,8
+    EDITTEXT        IDC_PRE_HOST_ADD,9,124,299,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_HOST_PREFIX,9,145,299,77,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_OP_ADD2,315,123,24,14
+    PUSHBUTTON      "Rem.",IDC_OP_REM2,315,145,25,14
+END
+
+IDD_WELCOMEMSGS DIALOG DISCARDABLE  0, 0, 352, 249
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Channels:",IDC_STATIC,10,14,47,8
+    EDITTEXT        IDC_CHANNELNAME,10,102,201,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADDCHANNEL,218,102,50,14
+    LISTBOX         IDC_CHANNELLIST,10,25,332,73,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_REMOVECHANNEL,292,102,50,15
+    CONTROL         "&All Channels",IDC_ALLCHANNELS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,280,12,62,10
+    LTEXT           "&Entry messages (random)",IDC_STATIC_GREETING,10,134,
+                    145,8
+    EDITTEXT        IDC_GREETING,10,225,201,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADDCHANNEL2,218,225,50,14
+    LISTBOX         IDC_WELCOMES,10,147,332,73,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_REMOVECHANNEL2,292,225,50,14
+    GROUPBOX        "Auto-Greet Channels",IDC_STATIC,3,3,347,243
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BENDMX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 427
+        VERTGUIDE, 50
+        VERTGUIDE, 55
+        VERTGUIDE, 203
+        VERTGUIDE, 238
+        VERTGUIDE, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+        HORZGUIDE, 269
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 358
+        VERTGUIDE, 10
+        VERTGUIDE, 101
+        VERTGUIDE, 104
+        VERTGUIDE, 149
+        VERTGUIDE, 182
+        VERTGUIDE, 187
+        VERTGUIDE, 193
+        VERTGUIDE, 288
+        VERTGUIDE, 295
+        VERTGUIDE, 352
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 31
+        HORZGUIDE, 45
+        HORZGUIDE, 67
+        HORZGUIDE, 84
+        HORZGUIDE, 102
+        HORZGUIDE, 108
+        HORZGUIDE, 116
+        HORZGUIDE, 209
+        HORZGUIDE, 220
+        HORZGUIDE, 232
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 347
+        VERTGUIDE, 11
+        VERTGUIDE, 132
+        VERTGUIDE, 135
+        VERTGUIDE, 166
+        VERTGUIDE, 172
+        VERTGUIDE, 187
+        VERTGUIDE, 340
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 214
+        HORZGUIDE, 19
+        HORZGUIDE, 30
+        HORZGUIDE, 43
+        HORZGUIDE, 54
+        HORZGUIDE, 59
+        HORZGUIDE, 71
+        HORZGUIDE, 80
+        HORZGUIDE, 93
+        HORZGUIDE, 133
+        HORZGUIDE, 208
+    END
+
+    IDD_MESSAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        VERTGUIDE, 8
+        VERTGUIDE, 54
+        VERTGUIDE, 296
+        VERTGUIDE, 351
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 232
+        HORZGUIDE, 24
+        HORZGUIDE, 28
+        HORZGUIDE, 131
+        HORZGUIDE, 167
+        HORZGUIDE, 185
+    END
+
+    IDD_CHATDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 358
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 180
+        HORZGUIDE, 171
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 330
+        VERTGUIDE, 84
+        VERTGUIDE, 166
+        VERTGUIDE, 247
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 241
+        HORZGUIDE, 98
+        HORZGUIDE, 109
+        HORZGUIDE, 128
+        HORZGUIDE, 141
+        HORZGUIDE, 174
+        HORZGUIDE, 183
+        HORZGUIDE, 225
+    END
+
+    IDD_UTIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        VERTGUIDE, 108
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_SIMPLEBOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        VERTGUIDE, 17
+        VERTGUIDE, 94
+        VERTGUIDE, 102
+        VERTGUIDE, 264
+        VERTGUIDE, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+        HORZGUIDE, 12
+        HORZGUIDE, 70
+        HORZGUIDE, 85
+        HORZGUIDE, 99
+        HORZGUIDE, 112
+        HORZGUIDE, 123
+        HORZGUIDE, 135
+        HORZGUIDE, 147
+        HORZGUIDE, 160
+    END
+
+    IDD_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 353
+        VERTGUIDE, 9
+        VERTGUIDE, 308
+        VERTGUIDE, 315
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 231
+        HORZGUIDE, 18
+        HORZGUIDE, 32
+        HORZGUIDE, 46
+        HORZGUIDE, 105
+        HORZGUIDE, 117
+        HORZGUIDE, 130
+        HORZGUIDE, 145
+        HORZGUIDE, 222
+    END
+
+    IDD_WELCOMEMSGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 350
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PREF                BITMAP  DISCARDABLE     "res/pref.bmp"
+IDB_BMX_LOGO            BITMAP  DISCARDABLE     "res/logo.bmp"
+IDB_USERMODES           BITMAP  DISCARDABLE     "res\\usermodes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBCLASS_FAILED     "Subclassing of WinMX failed."
+    IDS_REPAIRHOOK          "Repair Hooks?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "BendMX"
+    IDS_ERROR_WRITECHANNELS "Error during file operation. Settings could not be saved."
+    IDS_CFG_MENU            "Configuration Menu"
+    IDS_BENDMX_CONFIG       "BendMX Settings"
+    IDS_CFG_WINMX           "WinMX Settings"
+    IDS_HISTORY_MENU        "History Menu"
+    IDS_RCMSMENU            "RCMS Menu"
+    IDS_CMDMENU             "Quick Commands"
+    IDS_KICK                "Kick"
+    IDS_KICKBAN             "Kick+Ban"
+    IDS_BAN                 "Ban"
+    IDS_UNBAN               "Unban"
+    IDS_SENDMSG             "Send Message"
+    IDS_RCMSREDIRECT        "Redirect"
+    IDS_RCMSKICK            "Kick"
+    IDS_RCMSKICKBAN         "Kick+Ban"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RCMSBAN             "Ban"
+    IDS_RCMSUNBAN           "Unban"
+    IDS_RCMSPRINTSTAT       "Print Userstat"
+    IDS_RCMSPRINTIP         "Print IP"
+    IDS_RCMSADDADMIN        "Give Admin Status"
+    IDS_RCMSREMOVEADMIN     "Remove Admin Status"
+    IDS_CHAT                "Chat"
+    IDS_IGNORE              "Ignore"
+    IDS_WHOIS               "Whois"
+    IDS_BROWSE              "Browse"
+    IDS_HOTLISTADD          "Add to Hotlist"
+    IDS_RCMSCMD             "RCMS"
+    IDS_SELECTALL           "Select All"
+    IDS_COPY                "Copy"
+    IDS_SENDTOBROWSER       "Send as URL to Browser"
+    IDS_SEARCHGOOGLE        "Search on Google.com"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_QUOTE               "Quote"
+    IDS_COPYROOM            "Copy room name"
+    IDS_CLEARSCREEN         "Clear Screen"
+    IDS_UNIGNORE            "Unignore"
+    IDS_COPYUSERNAME        "Copy Username"
+    IDS_ADVANCED            "Advanced"
+    IDS_DISPLAYCHANNEL      "Display in Channel"
+    IDS_AWAYCONTROL         "Away Control"
+    IDS_TEXTTRICKS          "Text Tricks"
+    IDS_DOWNUP              "Download/Upload Stats"
+    IDS_LOCALTIME           "Localtime"
+    IDS_LAG                 "Lag in channel"
+    IDS_WINAMP              "Winamp Song"
+    IDS_OS                  "Operating System and Uptime"
+    IDS_HACKER              "H4CK3R"
+    IDS_BUBBLES             "Bubbles"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BOX                 "Box"
+    IDS_3DMSG               "3 Button (Message)"
+    IDS_3DACTION            "3D Buttons (Action)"
+    IDS_BACK                "/me is now back from »%s«.  %s was away for %s"
+    IDS_BACKSILENT          "You are now back from %s. You have been away for %s"
+    IDS_ZZZZZZZZ            "zZzZZZZZzzZzZzz"
+    IDS_WORK                "Work"
+    IDS_SLEEP               "Sleep"
+    IDS_AIR                 "Getting fresh Air"
+    IDS_BATHROOM            "Bathroom"
+    IDS_SMOKE               "Smoke"
+    IDS_FOOD                "Food"
+    IDS_BEER                "Beer"
+    IDS_TV                  "Watching TV"
+    IDS_STORE               "Run to the store"
+    IDS_NONE                "Wont tell you :-P"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GOINGAWAY           "/me is AFK, %s"
+    IDS_SYSINFO             "System Information"
+    IDS_KICKIT_MISSING      "Both Name and Password must not be empty!"
+    IDS_NOPRIMARY           "You are not hosting a charoom. You must be on primaray connection and host a room to use this, and there is no need to use the Kickit Server if you dont host a room anyway ;). If you need a Kickit Client use the Kickit Client Add-On for BendMX instead :-)"
+    IDS_NOROOM              "Room name must not be empty or the room you specified does not exist. Please check the roomname you entered."
+    IDS_WRONG               "Packet has wrong format: "
+    IDS_BOT_EMPTY           "Trigger and/or Response must not be empty!"
+    IDS_BOTWARNING          "WARNING:\nYou use the bot at your own risk, especially when you host a chat room with this instance of WinMX.\nIf you use the bot it is NOT RECOMMENDED that YOU use this WinMX to talk in the same channel the Bot runs in, as it might spam you out of the room (and if you are the host that will close the channel).  \n\nPLEASE RUN THIS BOT ONLY IF YOU HAVE PERMISSION FROM THE CHANNEL HOST!!!\r\nActivate Bot now?"
+    IDS_RCMSWARNING         "WARNING: BendMX detected an RCMS installtion in your WinMX folder (WS2_32.dll is present).\n\nPlease note that some BendMX features are unavailable when you use RCMS at the same time (such as Quickcommands, and the F3-F12 shortcuts and all plugins that need to intercept input from the edit line)"
+    IDS_SETBACK             "Set Back"
+    IDS_SETSILENTBACK       "Set Silent Back"
+    IDS_ZZZZZ               "Set Away for zZzZZZZzzZzZzz"
+    IDS_AWAYWORK            "Set Away for Work"
+    IDS_AWAYSLEEP           "Set Away for Sleep"
+    IDS_AWAYAIR             "Set Away for Fresh Air"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AWAYBATH            "Set Away for Bathroom"
+    IDS_AWAYSMOKE           "Set Away for Smoke"
+    IDS_AWAYFOOD            "Set Away for Food"
+    IDS_AWAYBEER            "Set Away for Beer"
+    IDS_AWAYTV              "Set Away for TV"
+    IDS_AWAYSTORE           "Set Away for Store"
+    IDS_AWAYNONE            "Set Away for None of your buisness"
+    IDS_AWAYCUSTOM          "Set Custom Away"
+    IDS_READMSG             "Read User-Message"
+    IDS_HELPCOLORS          "If enabled, BendMX will allow users to set a color for Message or Action text by using a circumflex prefix:\n\n^g = green\t^G = dark green\t^r = red\n^R = dark red\t^b = blue\t^B = dark blue\n^y = yellow\t^l = lilac\t^c = cyan\n^Y = orange\t^n = default color.\n\nYou can limit this to users listed in the operators box. Using colors too obsessivly might be considered as 'rude' and get you kicked/banned from a channel.\nExample:^gThis text is green."
+    IDS_BUBBLESCOLOR        "Colored Bubbles"
+    IDS_SETTINGS            "Settings"
+    IDS_GENERAL             "General"
+    IDS_COLORS              "Colors"
+    IDS_MSG                 "Messages"
+    IDS_FILTER              "Filtering"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_KICKIT              "Kickit"
+    IDS_BOT                 "Bot"
+    IDS_ABOUT               "About"
+    IDS_PLUGIN              "Add-On"
+    IDS_DESC                "Description"
+    IDS_AUTHOR              "Author"
+    IDS_HOOKRESTORED        "Hook was succesfully restored.\r\n"
+    IDS_ROOMCONNECTED       "Connected to room for:"
+    IDS_LOCALTIMECH         "Localtime:"
+    IDS_ROOMREDIRECTED      " Room '%s' was redirected to '%s'. Namechange catched. Hook is valid\r\n"
+    IDS_TOPICIS             "Topic is"
+    IDS_WINAMPNOT           "Winamp - not active"
+    IDS_SYSUPTIME           "System Uptime: %02d days %02d h %02d m %02d s %03d ms"
+    IDS_BENDMX1STLINE       "Type /help to display available Plugin commands. Rightclick for chat menu."
+    IDS_SYSSTRING           "%s build=%d «» CPUs %d Speed %d MHz «» %s %s %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CUSTOMIZE           "Customize this menu"
+    IDS_EDITRCMSMENU        "BendMX will now open Notepad so you can adjust the RCMS commands for the room. If you are done, save the file and close Notepad and rejoin the channel for changes to take effect. Please do not change the order of the RCMS commands in the file."
+    IDS_CHATINFO            "Serverinfo"
+    IDS_ROOMVERSION         "Room is powered by %s %s"
+    IDS_COPYIP              "Copy IP"
+    IDS_NOIP                "You are not an admin or the server does not support the IP Client protocoll"
+    IDS_USERS               "Groups"
+    IDS_COLOREDTEXT         "Colored Text"
+    IDS_UPTIME              "System Uptime"
+    IDS_RCMSKICKBAN5        "Kick+Ban 5 min."
+    IDS_RCMSDEVOICE         "Devoice"
+    IDS_RCMSVOICE           "Voice"
+    IDS_CUSTOM              "Custom Commands"
+    IDS_WELCOMEMSG          "Welcome"
+    IDS_USERLISTHEADER      "User,136;Share,60;Speed,80;IP (Admin/Op),120;Hostname (Admin/Op),150;Node-IP,120;Node-Port,80"
+    IDS_SHOWADMINWND        "Show Admin Window"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\BendMX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

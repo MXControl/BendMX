@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: BendMX - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC1.tmp" mit Inhalten
+[
+/nologo /MD /W3 /GX /Zd /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/BendMX.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\projects\BendMX\BendMX.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC1.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC2.tmp" mit Inhalten
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/WS2_32.pdb" /map:"Release/WS2_32.map" /machine:I386 /nodefaultlib:"WS2_32.lib" /def:".\BendMX.def" /out:"Release/WS2_32.dll" /implib:"Release/WS2_32.lib" 
+.\Release\AboutDlg.obj
+.\Release\BendMX.obj
+.\Release\BendMXDlg.obj
+.\Release\ChatDlg.obj
+.\Release\Clipboard.obj
+.\Release\ColorDlg.obj
+.\Release\ExtListCtrl.obj
+.\Release\FilterDlg.obj
+.\Release\GeneralDlg.obj
+.\Release\I18n.obj
+.\Release\Ini.obj
+.\Release\InputRequest.obj
+.\Release\MessageDlg.obj
+.\Release\MXSock.obj
+.\Release\MyListCtrl.obj
+.\Release\Plugin.obj
+.\Release\Settings.obj
+.\Release\SimpleBot.obj
+.\Release\Splash.obj
+.\Release\StdAfx.obj
+.\Release\SystemInfo.obj
+.\Release\Tokenizer.obj
+.\Release\WelcomeMsg.obj
+.\Release\ws2_32.obj
+.\Release\BendMX.res
+.\logging\Release\logging.lib
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC2.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+BendMX.cpp
+C:\projects\BendMX\BendMX.cpp(53) : warning C4273: 'send' : Inkonsistente DLL-Bindung. dllexport angenommen.
+C:\projects\BendMX\BendMX.cpp(54) : warning C4273: 'recv' : Inkonsistente DLL-Bindung. dllexport angenommen.
+C:\projects\BendMX\BendMX.cpp(55) : warning C4273: 'closesocket' : Inkonsistente DLL-Bindung. dllexport angenommen.
+C:\projects\BendMX\BendMX.cpp(56) : warning C4273: 'connect' : Inkonsistente DLL-Bindung. dllexport angenommen.
+Linker-Vorgang läuft...
+   Bibliothek Release/WS2_32.lib und Objekt Release/WS2_32.exp wird erstellt
+Erstellen der temporären Datei  "C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC6.tmp" mit Inhalten
+[
+/nologo /o"Release/BendMX.bsc" 
+.\Release\StdAfx.sbr
+.\Release\AboutDlg.sbr
+.\Release\BendMX.sbr
+.\Release\BendMXDlg.sbr
+.\Release\ChatDlg.sbr
+.\Release\Clipboard.sbr
+.\Release\ColorDlg.sbr
+.\Release\ExtListCtrl.sbr
+.\Release\FilterDlg.sbr
+.\Release\GeneralDlg.sbr
+.\Release\I18n.sbr
+.\Release\Ini.sbr
+.\Release\InputRequest.sbr
+.\Release\MessageDlg.sbr
+.\Release\MXSock.sbr
+.\Release\MyListCtrl.sbr
+.\Release\Plugin.sbr
+.\Release\Settings.sbr
+.\Release\SimpleBot.sbr
+.\Release\Splash.sbr
+.\Release\SystemInfo.sbr
+.\Release\Tokenizer.sbr
+.\Release\WelcomeMsg.sbr
+.\Release\ws2_32.sbr]
+Erstellen der Befehlzeile "bscmake.exe @C:\DOKUME~1\Thees\LOKALE~1\Temp\RSPC6.tmp"
+Browse-Informationsdatei wird erstellt...
+<h3>Ausgabefenster</h3>
+
+
+
+<h3>Ergebnisse</h3>
+WS2_32.dll - 0 Fehler, 4 Warnung(en)
+</pre>
+</body>
+</html>

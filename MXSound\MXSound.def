@@ -1,0 +1,7 @@
+; MXSound.def : Deklariert die Modul-Parameter für die DLL.
+
+LIBRARY      "MXSound"
+
+EXPORTS
+    ; Explizite Exporte können hier eingefügt werden
+    GetPluginAPI @1
